@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- left side of the header -->
+    <title>Yosef tools 🛠</title>
+    <link rel="stylesheet" href="/Contact/contact.css"/>
+    <link rel="stylesheet" href="/Menu/header-style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/Home/live-chat-js.js"></script>
+    <script src="contact.js"></script>
+    <script src="helperContact.js"></script>
+	</head>
+  <body>
+
+    <header>
+      <!-- left side of the header -->
+      <div class="left_side">
+        <a href="/Home/index.html" class="menu_links">Home</a> <span> | </span>
+        <a href="/Menu/Menu.html" class="menu_links">Shop</a> <span> | </span>
+        <a href="/Contact/contact.html" class="menu_links">Contact Us</a>
+        <span>| </span>
+        <a href="/Register/loginForm.html" class="menu_links"
+          >Sign in</a
+        >
+        <span> | </span>
+        
+        <a href="/Register/signUpForm.html" class="menu_links">Sign up</a>
+      </div>
+            <!-- creating shopping cart shortcut. -->
+            <span> | </span>
+            <a href="/shopping_cart/shopping.html" class="menu_links"
+              >Shopping Cart</a
+            >
+      <!-- right side of the header -->
+      <div class="right_side"> 
+          <a href="https://wa.me/+972542077433" target="_blank"><i class="fa fa-whatsapp" id="icon"></i></a>
+          <a href="https://www.instagram.com/yosef_kh98" target="_blank"><i class="fa fa-instagram" id="icon"></i></a>
+          <a href="mailto:yosef3125123@gmail.com" target="_blank"><i class="fa fa-envelope" id="icon"></i></a>
+      </div>
+     </header>
+
+<div class="my-form">
+    <form id="loginForm">
+      <table>
+        <tr>
+          <td>
+            <h1>Contact us</h1>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="text"
+              class="form-control"
+              name="name"
+              id="name"
+              placeholder="Name"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="email"
+              class="form-control"
+              name="email"
+              id="email"
+              placeholder="Email"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="text"
+              class="form-control"
+              name="subject"
+              id="subject"
+              placeholder="Subject"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <select
+              id="department"
+              name="department"
+              class="form-control"
+              required
+            >
+              <option value="none">
+                Select your department
+              </option>
+              <option value="marketing">Marketing</option>
+              <option value="customer-service">Customer Service</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <textarea
+              class="form-control"
+              name="message"
+              id="textbox"
+              cols="35"
+              rows="8"
+              placeholder="enter your message"
+            ></textarea>
+          </td>
+        </tr>
+      </tr>
+      <tr>
+        <td><p id="issue"></p></td>
+      </tr>
+        <tr>
+          <td>
+            <button class="send_button" type="button" onclick="validateForm()">
+              Send
+            </button>
+            <button class="send_button" type="reset" onclick="clearForm()">
+              Clear
+            </button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+  </body>
+</html>

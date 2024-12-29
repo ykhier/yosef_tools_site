@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/Register/loginFormCSS.css"/>
+    <link rel="stylesheet" href="/Menu/header-style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/Home/live-chat-js.js"></script>
+
+    <script src="loginForm.js"></script>
+    <script src="signUpForm.js"></script>
+    <script src="helperUser.js"></script>
+    <title>Yosef tools 🛠</title>
+  </head>
+  <body>
+  
+    <header>
+      <!-- left side of the header -->
+      <div class="left_side">
+        <a href="/Home/index.html" class="menu_links">Home</a> <span> | </span>
+        <a href="/Menu/Menu.html" class="menu_links">Shop</a> <span> | </span>
+        <a href="/Contact/contact.html" class="menu_links">Contact Us</a><span> | </span>
+        <a href="/Register/signUpForm.html" class="menu_links">Sign up</a> | </span>
+        <a href="/shopping_cart/shopping.html" class="menu_links">Shopping cart</a>
+
+      </div>
+      <!-- right side of the header -->
+      <div class="right_side"> 
+          <a href="https://wa.me/+972542077433" target="_blank"><i class="fa fa-whatsapp" id="icon"></i></a>
+          <a href="https://www.instagram.com/yosef_kh98" target="_blank"><i class="fa fa-instagram" id="icon"></i></a>
+          <a href="mailto:yosef3125123@gmail.com" target="_blank"><i class="fa fa-envelope" id="icon"></i></a>
+      </div>
+  </header>
+
+    <form id="loginForm">
+      <table>
+        <tr>
+            <td> <h1>Login</h1> </td>
+        </tr>
+        <tr>
+          <td> <label>Email:</label></td>
+        </tr>
+        <tr>
+          <td><input type="email" id="email" name="email" required/></td>
+        </tr>
+        <tr>
+          <td><label>Password: </label></td>
+        </tr>
+        <tr>
+
+            <tr> 
+                  <td>
+                    <input type="password" id="psw" name="psw" required/>          
+                    <span onclick="showPassword()" id="eyeicon" name="eyeicon">👁️</span>
+                  </td>
+            </tr>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" onclick="checkUser()">Login</button>
+            <button type="reset" onclick="resetMessage()">Reset</button>
+           
+        </td>
+        </tr>
+        <tr>
+            <td>
+                <p id="information" hidden></p>
+            </td>
+        </tr>
+       
+      </table>
+        <!--Move to the login page-->
+        <span id="loginLink" name="loginLink" > Don't have an account? 
+          <a href="signUpForm.html">Sign up</a></span>
+    </form>
+    
+
+  </body>
+</html>

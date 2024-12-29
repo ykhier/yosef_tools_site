@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yosef Tools 🛠</title>
+    <link rel="stylesheet" href="menu-style.css" />
+    <link rel="stylesheet" href="header-style.css" />
+    <script src="/Home/live-chat-js.js"> </script>
+    <!-- font awesome link, it is for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- javascript link -->
+    <script src="menu-js.js"></script>
+    <script src="/Register/helperUser.js"></script>
+  </head>
+  <body onscroll="show_hide_button()" id="body">
+    <!-- header of the site -->
+    <header>
+      <!-- left side of the header -->
+      <div class="left_side">
+        <a href="/Home/index.html" class="menu_links">Home</a>
+        <span> | </span>
+        <a href="/Menu/Menu.html" class="menu_links">Shop</a>
+        <span> | </span>
+        <a href="/Contact/contact.html" class="menu_links"
+          >Contact Us</a
+        >
+        <span> | </span>
+        <a href="/Register/loginForm.html" class="menu_links"
+          >Sign in</a
+        ><span> | </span>
+        <a href="/Register/signUpForm.html" class="menu_links"
+          >Sign up</a
+        >
+      </div>
+      <!-- creating shopping cart shortcut. -->
+      <span> | </span>
+      <a href="/shopping_cart/shopping.html" class="menu_links"
+        >Shopping Cart</a
+      >
+      <!-- right side of the header -->
+      <div class="right_side">
+        <a href="https://wa.me/+972542077433" target="_blank"
+          ><i class="fa fa-whatsapp" id="icon"></i
+        ></a>
+        <a href="https://www.instagram.com/yosef_kh98" target="_blank"
+          ><i class="fa fa-instagram" id="icon"></i
+        ></a>
+        <a href="mailto:yosef3125123@gmail.com" target="_blank"
+          ><i class="fa fa-envelope" id="icon"></i
+        ></a>
+      </div>
+    </header>
+    <!-- main -->
+
+    <!-- table of the products in the shop-->
+    <table>
+      <tr>
+        <th colspan="7">
+          <h1 class="title">Tool accessories</h1>
+        </th>
+      </tr>
+      <!-- first row of the table -->
+      <tr>
+        <td class="tool_card">
+          <img
+            src="images/tool-box.jpg"
+            alt="tool_box_image"
+            class="image-card"
+          />
+          <h3>Tool box</h3>
+          <p class="description">
+            Efficient and Compact Tool Storage Solution.
+          </p>
+          <h4>Price: $150</h4>
+          <input
+            type="button"
+            value="Purchase"
+            class="purchase-button"
+            onclick="purchaseBtnClicked(1, 'Tool box', 150)"
+          />
+        </td>
+        <td class="space"></td>
+        <td class="tool_card">
+          <img
+            src="images/screwdrivers.jpg"
+            alt="screwdrivers_image"
+            class="image-card"
+          />
+          <h3>Screwdrivers</h3>
+          <p class="description">
+            Versatile tools for precise fastening and loosening.
+          </p>
+          <h4>Price: $2</h4>
+          <input
+            type="button"
+            value="Purchase"
+            class="purchase-button"
+            onclick="purchaseBtnClicked(2, 'Screwdrivers', 2)"
+          />
+        </td>
+        <td class="space"></td>
+        <td class="tool_card">
+          <img
+            src="images/socket-wrench-set.webp"
+            alt="Socket_wrench_set_image"
+            class="image-card"
+          />
+          <h3>Socket wrench set</h3>
+          <p class="description">Comprehensive set for versatile automotive.</p>
+          <h4>Price: $120</h4>
+          <input
+            type="button"
+            value="Purchase"
+            class="purchase-button"
+            onclick="purchaseBtnClicked(3, 'Socket wrench set', 120)"
+          />
+        </td>
+        <td class="space"></td>
+        <td class="tool_card">
+          <img
+            src="images/generator.jpg"
+            alt="Generator_image"
+            class="image-card"
+          />
+          <h3>Generator</h3>
+          <p class="description">
+            Machine that converts energy into usable power.
+          </p>
+          <h4>Price: $300</h4>
+          <input
+            type="button"
+            value="Purchase"
+            class="purchase-button"
+            onclick="purchaseBtnClicked(4, 'Generator', 300)"
+          />
+        </td>
+      </tr>
+      <!-- row space -->
+      <tr>
+        <td colspan="7" class="space"></td>
+      </tr>
+      <!-- the second row of the table -->
+      <tr>
+        <td class="tool_card">
+          <img src="images/mixer.webp" alt="mixer_image" class="image-card" />
+          <h3>Mixer</h3>
+          <p class="description">
+            Device blends or combines ingredients smoothly.
+          </p>
+          <h4>Price: $400</h4>
+          <input
+            type="button"
+            value="Purchase"
+            class="purchase-button"
+            onclick="purchaseBtnClicked(5, 'Mixer', 400)"
+          />
+        </td>
+        <td class="space"></td>
+        <td class="tool_card">
+          <img
+            src="images/pitshon.webp"
+            alt="Patishon_image"
+            class="image-card"
+          />
+          <h3>Patishon</h3>
+          <p class="description">Device used for mixing and baking pastries.</p>
+          <h4>Price: $200</h4>
+          <input
+            type="button"
+            value="Purchase"
+            class="purchase-button"
+            onclick="purchaseBtnClicked(6, 'Patishon', 200)"
+          />
+        </td>
+        <td class="space"></td>
+        <td class="tool_card">
+          <img
+            src="images/Maestro_welder.png"
+            alt="Maestro_welder_image"
+            class="image-card"
+          />
+          <h3>Maestro welder</h3>
+          <p class="description">Machine operated by an expert in welding.</p>
+          <h4>Price: $230</h4>
+          <input
+            type="button"
+            value="Purchase"
+            class="purchase-button"
+            onclick="purchaseBtnClicked(7, 'Maestro welder', 230)"
+          />
+        </td>
+        <td class="space"></td>
+        <td class="tool_card">
+          <img
+            src="images/Vertical_saw.jpg"
+            alt="Vertical_saw_image"
+            class="image-card"
+          />
+          <h3>Vertical saw</h3>
+          <p class="description">
+            Machine for cutting vertically through materials precisely.
+          </p>
+          <h4>Price: $340</h4>
+          <input
+            type="button"
+            value="Purchase"
+            class="purchase-button"
+            onclick="purchaseBtnClicked(8, 'Vertical saw', 340)"
+          />
+        </td>
+      </tr>
+      <!-- space between the rows -->
+      <tr>
+        <td colspan="7" class="space"></td>
+      </tr>
+      <!-- third row of the table-->
+      <tr>
+        <td class="tool_card">
+          <img
+            src="images/Dry_vacuum_cleaner.webp"
+            alt="Dry_vacuum_cleaner_image"
+            class="image-card"
+          />
+          <h3>Dry vacuum cleaner</h3>
+          <p class="description">Device for cleaning with suction power.</p>
+          <h4>Price: $310</h4>
+          <input
+            type="button"
+            value="Purchase"
+            class="purchase-button"
+            onclick="purchaseBtnClicked(9, 'Dry vacuum cleaner', 310)"
+          />
+        </td>
+        <td class="space"></td>
+        <td class="tool_card">
+          <img
+            src="images/quarry_hammer.jpg"
+            alt="quarry_hammer_image"
+            class="image-card"
+          />
+          <h3>Quarry hammer</h3>
+          <p class="description">Tool for breaking rock in quarries.</p>
+          <h4>Price: $150</h4>
+          <input
+            type="button"
+            value="Purchase"
+            class="purchase-button"
+            onclick="purchaseBtnClicked(10, 'Quarry hammer', 150)"
+          />
+        </td>
+        <td class="space"></td>
+        <td class="tool_card">
+          <img
+            src="images/Laser_Distance_Meter.png"
+            alt="Laser_Distance_Meter_image"
+            class="image-card"
+          />
+          <h3>Laser Distance Meter</h3>
+          <p class="description">
+            Tool measuring distance using laser technology.
+          </p>
+          <h4>Price: $140</h4>
+          <input
+            type="button"
+            value="Purchase"
+            class="purchase-button"
+            onclick="purchaseBtnClicked(11, 'Laser Distance Meter', 140)"
+          />
+        </td>
+        <td class="space"></td>
+        <td class="tool_card">
+          <img
+            src="images/handy_plaster_level.png"
+            alt="handy_plaster_level_image"
+            class="image-card"
+          />
+          <h3>Handy plaster level</h3>
+          <p class="description">Tool for leveling plaster surfaces easily.</p>
+          <h4>Price: $170</h4>
+          <input
+            type="button"
+            value="Purchase"
+            class="purchase-button"
+            onclick="purchaseBtnClicked(12, 'Handy plaster level', 170)"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td colspan="7" class="space"></td>
+      </tr>
+    </table>
+    <!-- arrow up button in right bottom of the screen -->
+    <button
+      class="bottom_right_button"
+      id="goUpButton"
+      onclick="go_up_button_clicked()"
+    >
+      <i class="fa fa-arrow-up" id="arrowIcon"></i>
+    </button>
+  </body>
+</html>

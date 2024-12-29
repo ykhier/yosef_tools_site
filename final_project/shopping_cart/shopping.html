@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link to custom CSS files -->
+    <link rel="stylesheet" href="/shopping_cart/shopping.css" />
+    <link rel="stylesheet" href="/shopping_cart/head.css" />
+    <!-- Link to Font Awesome for icons -->
+    <script src="/Home/live-chat-js.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- JavaScript file for dynamic table population -->
+    <script src="/shopping_cart/shopping.js" defer></script>
+    <title>Yosef Tools 🛠</title>
+  </head>
+  <body>
+    <!-- Header section -->
+    <header>
+      <!-- Left side links -->
+      <div class="left_side">
+        <a href="/Home/index.html" class="menu_links">Home</a>
+        <span> | </span>
+        <a href="/Menu/Menu.html" class="menu_links">Shop</a>
+        <span> | </span>
+        <a href="/Contact/contact.html" class="menu_links"
+          >Contact Us</a
+        >
+        <span> | </span>
+        <a href="/Register/loginForm.html" class="menu_links"
+          >Sign in</a
+        >
+        <span> | </span>
+        <a href="/Register/signUpForm.html" class="menu_links"
+          >Sign up</a
+        >
+        <span> | </span>
+        <a href="/Register/signUpForm.html" class="menu_links"
+          >Shopping Cart</a
+        >
+      </div>
+      <!-- Right side icons -->
+      <div class="right_side">
+        <a href="https://wa.me/+972542077433" target="_blank"
+          ><i class="fa fa-whatsapp" id="icon"></i
+        ></a>
+        <a href="https://www.instagram.com/yosef_kh98" target="_blank"
+          ><i class="fa fa-instagram" id="icon"></i
+        ></a>
+        <a href="mailto:yosef3125123@gmail.com" target="_blank"
+          ><i class="fa fa-envelope" id="icon"></i
+        ></a>
+      </div>
+    </header>
+
+    <!-- Main heading for the page -->
+    <h1>Shopping Cart</h1>
+
+    <!-- Section for the cart container -->
+    <section id="cart-container" class="container">
+      <!-- Table to display products -->
+      <table>
+        <tbody id="productsTable"></tbody>
+        <!-- Placeholder for populated table rows -->
+      </table>
+    </section>
+  </body>
+</html>

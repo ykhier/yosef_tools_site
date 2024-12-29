@@ -1,0 +1,32 @@
+body {
+  text-align: center;
+}
+table {
+  display: flex;
+  justify-content: center; /* Center the table on the screen */
+  margin-top: 60px;
+  text-align: center;
+}
+#header {
+  background-color: #04aa6d; /* Background color of the header row */
+  color: white; /* Text color of the header row */
+}
+#cart-container table td {
+  border: 1px solid #b6b3b3;
+  text-align: center;
+}
+/* Styles for the table header row */
+.table-header-row {
+  background-color: #04aa6d; /* Background color of the header row */
+  color: white; /* Text color of the header row */
+  font-weight: bold; /* Bold font for header row text */
+}
+
+/* Styles for the table header cells */
+.table-header-cell {
+  padding: 10px; /* Padding around the header cell content */
+  border: 1px solid #ddd; /* Border and color for the header cells */
+  text-align: center; /* Center-align text within header cells */
+  width: 300px;
+  height: 50px;
+}
